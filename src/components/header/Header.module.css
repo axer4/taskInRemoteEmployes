@@ -1,0 +1,8 @@
+.container {
+    background-color: #67AEFC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 0px;
+    color: #FFFFFF;
+}
