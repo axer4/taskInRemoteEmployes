@@ -1,0 +1,22 @@
+.navigation_item:not(:last-child) {
+    margin-right: 35px;
+}
+
+button {
+    padding: 9.90px 42px;
+}
+
+button:hover {
+    border: 2px solid #FFFFFF;
+    transition-property: color;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active {
+    background-color: #FFFFFF;
+    color: #67AEFC;
+    transition-property: color;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
