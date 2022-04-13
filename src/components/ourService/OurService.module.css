@@ -1,0 +1,60 @@
+.ourService_heading {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    color: #111111;
+    min-height: 105px;
+}
+.ourService_arrowButton{
+    background-color: #ffffff;
+    margin-right: 16px;
+    margin-left: auto;
+    width: 60px;
+    height: 60px;
+}
+.ourService_arrowButton:hover {
+    border: 1px solid #67AEFC;
+    border-radius: 15px;
+}
+.ourService_arrowButton:active {
+    border:none;
+    border-radius: 15px;
+    background-color: #67AEFC;
+    color:#ffffff;
+}
+.ourService{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DAECFF;
+    min-height: 703px;
+    position: relative;
+}
+.ourService_description {
+    display: inline-block;
+    margin-left: 28px;
+}
+.ourService_item {
+    display: flex;
+    align-items: center;
+    min-width: 1169px;
+    min-height: 61px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding-left: 44px;
+    font-size: 18px;
+line-height: 175%;
+}
+.ourService_item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.ourService_item::before {
+    content: url('../../images/beforeEllipse.png');
+}
+.bag {
+    position: absolute;
+    top: 463px;
+    right: 145px;
+}

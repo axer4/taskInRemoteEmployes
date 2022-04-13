@@ -1,0 +1,51 @@
+.dropDownBlock{ 
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-height: 438px;
+    max-width: 1169px;
+    padding-top: 14px;
+    padding-left: 44px;
+    padding-bottom: 57px;
+}
+.dropDownBlock_heading::before {
+    content: url('../images/drowDownElipse.png');
+    margin-right: 28px;
+}
+.dropDownBlock_heading {
+    display: flex;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 41px;
+}
+.drowDownBlock_description {
+    border-left: 1px solid #6b6767;
+    padding-left: 40px;
+    margin-left: 11px;
+    max-width: 940px;
+    line-height: 175%;
+    font-size: 18px;
+}
+.arrowDown {
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.dropDownBlock_button {
+    background-color: #ffffff;
+    margin-right: 16px;
+    margin-left: auto;
+    width:60px;
+    height:60px;
+}
+.dropDownBlock_button:hover {
+    border: 1px solid #67AEFC;
+    border-radius: 15px;
+}
+.dropDownBlock_button:active {
+    border:none;
+    border-radius: 15px;
+    background-color: #67AEFC;
+    color:#ffffff;
+}
+.dropDownBlock_headingBlock {
+    display: flex;
+}

@@ -1,0 +1,17 @@
+.developmentSteps {
+    position: relative;
+    padding-top: 123px;
+}
+
+.whiteSphere {
+    position: absolute;
+    left: 187px;
+    top: 129px;
+}
+
+.developmentSteps_heading {
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+}

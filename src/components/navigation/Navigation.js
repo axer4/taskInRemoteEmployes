@@ -1,7 +1,7 @@
 import Button from "../../UI/Button";
 import NavigationItem from "./NavigationItem";
 import s from './Navigation.module.css';
-const navigationText = ['Услуги', 'Порфтолио', 'Этапы', 'Дизайнеры', <Button buttonText='ЗАКАЗАТЬ'/>];
+const navigationText = ['Услуги', 'Порфтолио', 'Этапы', 'Дизайнеры', <Button buttonText='ЗАКАЗАТЬ' className={s.navigation_button}/>];
 const Navigation = () => {
     return (
         <ul className={s.navigation_list}>

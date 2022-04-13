@@ -2,3 +2,6 @@
     display: flex;
     align-items: center;
 }
+.navigation_button {
+    padding: 9.90px 42px;
+}

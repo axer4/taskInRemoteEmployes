@@ -2,10 +2,6 @@
     margin-right: 35px;
 }
 
-button {
-    padding: 9.90px 42px;
-}
-
 button:hover {
     border: 2px solid #FFFFFF;
     transition-property: color;
