@@ -1,5 +1,5 @@
 import s  from './OurService.module.css';
-import images from '../../images/index.js';
+import images from '../../images/ourService/index';
 import { useState } from 'react';
 import DropDownBlock from '../../UI/DropDownBlock';
 const {arrowDown,bag} = images;

@@ -1,5 +1,5 @@
 import s from './Hero.module.css';
-import images from '../../images';
+import images from '../../images/hero/index';
 import Button from '../../UI/Button.js'
 const {
     cylinder,

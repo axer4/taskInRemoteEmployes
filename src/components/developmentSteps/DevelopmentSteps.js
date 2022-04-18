@@ -1,6 +1,9 @@
 import s from './DevelopmentSteps.module.css';
-import images from '../../images';
-const {whiteSphere} = images;
+import images from '../../images/developmentSteps/index'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import SimpleSlider from '../slider/Slider';
+const {whiteSphere,rightBlueWave} = images;
 const DevelopmentSteps = () => {
     return (
         <div className={s.developmentSteps}>
@@ -9,15 +12,13 @@ const DevelopmentSteps = () => {
      src={whiteSphere}
      alt='sphere'
      className={s.whiteSphere}
+     /> 
+     <SimpleSlider/>
+     <img 
+     src={rightBlueWave}
+     alt='wave'
+     className={s.blueWave}
      />
-     <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-  <div><h3>1</h3></div>
-  <div><h3>2</h3></div>
-  <div><h3>3</h3></div>
-  <div><h3>4</h3></div>
-  <div><h3>5</h3></div>
-  <div><h3>6</h3></div>
-</div>
         </div>
     )
 }

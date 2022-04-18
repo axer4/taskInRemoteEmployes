@@ -1,0 +1,67 @@
+.lightBlueSphere_big {
+    position: absolute;
+    left: 153px;
+    top: 150px;
+}
+.clocks {
+    position: absolute;
+    top: 214.65px;
+    right: 625.62px;
+}
+.purpleWave {
+    position: absolute;
+    bottom: 178.43px;
+    right: 662.33px;
+    z-index: 2;
+}
+.order {
+    position: absolute;
+    bottom: 104px;
+    right: 309.69px;
+}
+.pinkCylinder {
+    position: absolute;
+    z-index: 1;
+    bottom: 153px;
+    right: 256px;
+}
+.taper {
+    position: absolute;
+    bottom: 274.13px;
+    right: 144.5px;
+}
+.lightBlueSphere_small {
+    position: absolute;
+    top: 150px;
+    right: 382.80px;
+}
+.pinkSphere {
+    position: absolute;
+    top: 137px;
+    right: 312px;
+}
+.container {
+    position: relative;
+    min-height: 724px;
+    display: flex;
+    align-items: center;
+}
+.moreInfo_text {
+    max-width: 670px;
+    margin-left: 377.8px;
+}
+.moreInfo_heading {
+    margin-bottom: 53px;
+    font-weight: 800;
+font-size: 32px;
+line-height: 125%;
+}
+.moreInfo_description {
+    font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+margin-bottom: 45px;
+}
+.moreInfo_button {
+    padding: 22px 56px;
+}

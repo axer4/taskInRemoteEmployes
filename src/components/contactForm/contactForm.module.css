@@ -1,0 +1,67 @@
+.container {
+    position: relative;
+    min-height: 774px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DAECFF;
+}
+.contactForm {
+    max-width: 470px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactForm_centerBlock {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+}
+.form_heading {
+    margin-bottom: 10px;
+    font-weight: 800;
+font-size: 32px;
+line-height: 125%;
+text-align: center;
+}
+.form_description {
+    font-weight: 400;
+font-size: 18px;
+line-height: 175%;
+margin-bottom: 27px;
+text-align: center;
+}
+.form_input {
+    border: 1px solid #6EB1FB;
+    border-radius: 10px;
+    padding: 19px 0 19px 14px;
+    width: 100%;
+}
+.form_input:not(:last-child) {
+    margin-bottom: 20px;
+}
+.form_input:last-child {
+    margin-bottom: 30px;
+}
+.contactForm_button {
+    width: 270px;
+    padding: 22px 85px;
+    margin-top: 10px;
+}
+.contactForm_phone {
+    position: absolute;
+    left: 232px;
+    top: 262px;
+}
+.contactForm_purpleWave {
+    position: absolute;
+    top: 289px;
+    right: 405px;
+}
+.contactForm_whiteSphere {
+    position: absolute;
+    top: 362.70px;
+    right: 410.20px;
+}
