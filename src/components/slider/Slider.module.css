@@ -47,3 +47,30 @@
     background-color: #67AEFC;
     color: #ffffff;
 }
+/* ------------------------------------ Media rules 1024 - 1440 -------------------------------------------------*/
+@media screen and (min-width:1024px) and (max-width:1439.5px) {
+    .container {
+        max-width: 900px;
+    }
+    .slider_img {
+        right: 100px;
+    }
+    .heading_and_description {
+        margin-left: 100px;
+    }
+    .slick-slider {
+        width: 0px;
+    }
+}
+/* ------------------------------------ Media rules 768 - 1024 -------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1023.5px) {
+    .container {
+        max-width: 650px;
+    }
+    .prevArrow {
+        display: none;
+    }
+    .nextArrow {
+        display: none;
+    }
+}

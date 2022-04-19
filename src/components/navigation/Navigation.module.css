@@ -5,3 +5,9 @@
 .navigation_button {
     padding: 9.90px 42px;
 }
+/* ------------------------------------ Media rules 768 - 1024 -------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1023.5px) {
+    .navigation_list {
+        justify-content: center;
+    }
+}

@@ -98,3 +98,84 @@ margin-bottom: 45px;
     }
 
 }
+/* ------------------------------------ Media rules 1024 - 1440 -------------------------------------------------*/
+@media screen and (min-width:1024px) and (max-width:1439.5px) {
+ .container {
+    align-items: flex-end;
+    justify-content: center;
+ }
+ .moreInfo_text {
+     margin: 0;
+     margin-bottom: 30px;
+ }
+ .moreInfo_heading {
+     margin-bottom: 23px;
+ }
+ .taper {
+    bottom: 374.13px;
+}
+.clocks {
+    top: 64px;
+}
+.purpleWave {
+    top: 264px;
+}
+.order {
+    bottom: 324px;
+}
+.pinkCylinder {
+    top: 164px;
+}
+.lightBlueSphere_small {
+    top: 5px;
+}
+.pinkSphere {
+   top: 37px;
+}
+.lightBlueSphere_big {
+    left: 30px;
+    top: 50px;
+}
+}
+/* ------------------------------------ Media rules 768 - 1024 -------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1023.5px) {
+    .clocks {
+        left: 30px;
+        width: 109px;
+        height: 117px;
+        top: 190px;
+    }
+    .lightBlueSphere_big {
+        left: 60px;
+        top: 70px;
+    }
+    .order {
+        right: 400px;
+        bottom: 254px;
+        width: 311px;
+        height: 281px;
+    }
+    .taper {
+        display: none;
+    }
+    .purpleWave {
+        bottom: 328px;
+        right: 0;
+        left: 0;
+        width: 151px;
+        height: 53px;
+    }
+    .pinkCylinder {
+        bottom: 253px;
+        right: 400px;
+        width: 200px;
+        height: 80px;
+    }
+    .lightBlueSphere_small {
+        right: 480px;
+        top: 160px;
+    }
+    .pinkSphere {
+        right: 412px;
+    }
+}

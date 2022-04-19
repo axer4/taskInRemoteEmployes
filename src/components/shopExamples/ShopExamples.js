@@ -1,5 +1,7 @@
 import s from './ShopExamples.module.css';
 import images from '../../images/shopExamples/index';
+import Slider from 'react-slick/lib/slider';
+import Media from 'react-media';
 const {
     bigCake,
     flowers,
@@ -47,6 +49,15 @@ const shopCatalogue = [
         alt:'colors catalogue'
     }
 ];
+const settings = {
+    dots: true,
+    vertical:true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows:false,
+    swipeToSlide: true
+}
 const ShopExamples = () => {
     return (
         <div className={s.container}>
@@ -60,6 +71,95 @@ const ShopExamples = () => {
             alt='white sphere'
             className={s.whiteSphere}
             />
+            <Media query="(max-width: 1023.5px)" render={() =>
+          ( <section className={s.examples}>
+            <h2 className={s.examples_heading}>Примеры онлайн-магазинов</h2>
+            <div className={s.slider_examples}>
+            <Slider {...settings}>
+            <div className={s.item_card}>
+                        <div className={s.card_overlay}>
+                            <h3 className={s.overlay_heading}>Онлайн-магазин</h3>
+                            <p className={s.overlay_description}>для оптовых покупок</p>
+                            </div>
+                        <img 
+                        src={twoCarts}
+                        alt='twoCarts'
+                        className={s.card_img}
+                        width='563px'
+                        height='447px'
+                        />
+                    </div>
+                    <div className={s.item_card}>
+                        <div className={s.card_overlay}>
+                            <h3 className={s.overlay_heading}>Онлайн-магазин</h3>
+                            <p className={s.overlay_description}>для флористов</p>
+                            </div>
+                        <img 
+                        src={flowers}
+                        alt='flowers'
+                        className={s.card_img}
+                        width='563px'
+                        height='447px'
+                        />
+                    </div>
+                    <div className={s.item_card}>
+                        <div className={s.card_overlay}>
+                            <h3 className={s.overlay_heading}>Онлайн-магазин</h3>
+                            <p className={s.overlay_description}>для парикмахеров</p>
+                            </div>
+                        <img 
+                        src={hairdrayer}
+                        alt='hairdrayer'
+                        className={s.card_img}
+                        width='563px'
+                        height='447px'
+                        />
+                    </div>
+                    <div className={s.item_card}>
+                        <div className={s.card_overlay}>
+                            <h3 className={s.overlay_heading}>Онлайн-магазин</h3>
+                            <p className={s.overlay_description}>для визажистов</p>
+                            </div>
+                        <img 
+                        src={shiny}
+                        alt='shiny'
+                        className={s.card_img}
+                        width='563px'
+                        height='447px'
+                        />
+                    </div>
+                    <div className={s.item_card}>
+                        <div className={s.card_overlay}>
+                            <h3 className={s.overlay_heading}>Онлайн-магазин</h3>
+                            <p className={s.overlay_description}>для кондитеров</p>
+                            </div>
+                        <img 
+                        src={bigCake}
+                        alt='bigCake'
+                        className={s.card_img}
+                        width='563px'
+                        height='447px'
+                        />
+                    </div>
+                    <div className={s.item_card}>
+                        <div className={s.card_overlay}>
+                            <h3 className={s.overlay_heading}>Онлайн-магазин</h3>
+                            <p className={s.overlay_description}>для художников</p>
+                            </div>
+                        <img 
+                        src={colorCatalogue}
+                        alt='colorCatalogue'
+                        className={s.card_img}
+                        width='563px'
+                        height='447px'
+                        />
+                    </div>
+        </Slider>
+        </div>
+        </section>
+          )}
+        />
+        <Media query="(min-width:1024px)" render={ () => (
             <section className={s.examples}>
             <h2 className={s.examples_heading}>Примеры онлайн-магазинов</h2>
             <ul className={s.examples_list}>
@@ -80,9 +180,8 @@ const ShopExamples = () => {
                     </div>
                     </li>
                 })}
-
             </ul>
-            </section>
+            </section>)}/>
         </div>
     )
 }

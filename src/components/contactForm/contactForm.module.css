@@ -6,60 +6,72 @@
     align-items: center;
     background-color: #DAECFF;
 }
+
 .contactForm {
     max-width: 470px;
 }
+
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .contactForm_centerBlock {
     display: flex;
     flex-direction: column;
     min-height: 400px;
 }
+
 .form_heading {
     margin-bottom: 10px;
     font-weight: 800;
-font-size: 32px;
-line-height: 125%;
-text-align: center;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
 }
+
 .form_description {
     font-weight: 400;
-font-size: 18px;
-line-height: 175%;
-margin-bottom: 27px;
-text-align: center;
+    font-size: 18px;
+    line-height: 175%;
+    margin-bottom: 27px;
+    text-align: center;
 }
+
 .form_input {
     border: 1px solid #6EB1FB;
     border-radius: 10px;
     padding: 19px 0 19px 14px;
     width: 100%;
 }
+
 .form_input:not(:last-child) {
     margin-bottom: 20px;
 }
+
 .form_input:last-child {
     margin-bottom: 30px;
 }
+
 .contactForm_button {
     width: 270px;
     padding: 22px 85px;
     margin-top: 10px;
 }
+
 .contactForm_phone {
     position: absolute;
     left: 232px;
     top: 262px;
 }
+
 .contactForm_purpleWave {
     position: absolute;
     top: 289px;
     right: 405px;
 }
+
 .contactForm_whiteSphere {
     position: absolute;
     top: 362.70px;
@@ -72,14 +84,52 @@ text-align: center;
         left: 100px;
         top: 220px;
     }
+
     .contactForm_purpleWave {
         top: 249px;
-    right: 193px;
+        right: 193px;
     }
+
     .contactForm_whiteSphere {
         top: 322.7px;
         right: 208.2px;
         width: 60px;
         height: 62px;
+    }
+}
+/* ------------------------------------ Media rules 1024 - 1440 -------------------------------------------------*/
+@media screen and (min-width:1024px) and (max-width:1439.5px) {
+    .contactForm_phone {
+        width: 229px;
+        height: 239px;
+        left: 0;
+        top: 300px;
+    }
+    .contactForm_purpleWave {
+        right: 0;
+    }
+    .contactForm_whiteSphere {
+        right: 5px;
+        width: 50px;
+        height: 52px;
+    }
+}
+/* ------------------------------------ Media rules 768 - 1024 -------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1023.5px) {
+    .contactForm_phone {
+        width: 129px;
+        height: 139px;
+        left: 0;
+        top: 100px;
+    }
+    .contactForm_purpleWave {
+        right: 0;
+        top: 550px;
+    }
+    .contactForm_whiteSphere {
+        right: 5px;
+        width: 30px;
+        height: 32px;
+        top: 597px;
     }
 }

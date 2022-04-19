@@ -22,6 +22,26 @@ const NextArrow = (props) => {
       ><img src={arrowDown} alt='arrow' className={s.prevArrow}/></div>
     )
   }
+  const NextArrowLaptop = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", top: '450px', right: '350px'}}
+        onClick={onClick}
+      ><img src={arrowDown} alt='arrow' className={s.nextArrow}/></div>
+    );
+  }
+  const PrevArrowLaptop = (props) => {
+    const { className, style, onClick } = props;
+    return (
+        <div
+        className={className}
+        style={{ ...style, display: "block", top: '450px', left: '300px'}}
+        onClick={onClick}
+      ><img src={arrowDown} alt='arrow' className={s.prevArrow}/></div>
+    )
+  }
 const SimpleSlider = () => {
     const settings = {
         dots: false,
@@ -29,7 +49,30 @@ const SimpleSlider = () => {
         slidesToShow: 2,
         slidesToScroll: 2,
         nextArrow: <NextArrow/>,
-        prevArrow: <PrevArrow/>
+        prevArrow: <PrevArrow/>,
+        responsive: [
+          {
+            breakpoint: 1440,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              nextArrow: <NextArrowLaptop/>,
+              prevArrow: <PrevArrowLaptop/>,
+            }
+          },
+          {
+            breakpoint: 1023.5,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            }
+          },
+
+        ],
       };
       return (
           <div className={s.container}>

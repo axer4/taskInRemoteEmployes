@@ -153,3 +153,50 @@
         height: 458px;
     }
 }
+/* ------------------------------------ Media rules 1024 - 1440 -------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1439.5px) {
+    .hero {
+        min-height: 1166px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    }
+    .hero_content {
+        position: static;
+        margin-bottom: 40px;
+    }
+    .pinkCylinder {
+        right: 100px;
+    }
+}
+/* ------------------------------------ Media rules 768 - 1024 -------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1023.5px) {
+    .leftEllipse {
+        display: none;
+    }
+    .leftWave {
+        display: none;
+    }
+    .goToMarket {
+        right: 135px;
+    }
+    .cylinder {
+        right: 404px;
+    }
+    .leftLightBlueSphere {
+        left: 69px;
+    }
+    .rightBlueWave {
+        right: 587px;
+    }
+    .rightWave{
+        right: 57px;
+    }
+    .rightLightBlueSphere {
+        right: 79px;
+    }
+    .purpleSphere {
+        right: 1px;
+    }
+}

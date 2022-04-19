@@ -68,3 +68,18 @@ line-height: 175%;
     height: 138px;
     }
 }
+/* ------------------------------------ Media rules 1024 - 1440 -------------------------------------------------*/
+@media screen and (min-width:300px) and (max-width:1439.5px) {
+    .ourService_item{
+        min-width: 969px;
+    }
+    .bag {
+        display: none;
+    }
+}
+/* ------------------------------------ Media rules 768 - 1024 -------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1023.5px) {
+    .ourService_item{
+        min-width: 669px;
+    }
+}
