@@ -58,3 +58,13 @@ line-height: 175%;
     top: 463px;
     right: 145px;
 }
+
+/* ------------------------------------ Media rules 1440 - 1920 -------------------------------------------------*/
+@media screen and (min-width:1440px) and (max-width:1919.5px) {
+    .bag {
+        right: 0;
+    top: 553px;
+    width: 123px;
+    height: 138px;
+    }
+}

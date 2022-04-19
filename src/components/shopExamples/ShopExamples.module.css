@@ -62,3 +62,16 @@ line-height: 125%;
     width: 108px;
     height: 108px;
 }
+/* ------------------------------------ Media rules 1440 - 1920 -------------------------------------------------*/
+@media screen and (min-width:1440px) and (max-width:1919.5px) {
+    .pinkWave {
+        left:23px;
+        top:1px;
+    }
+    .whiteSphere {
+        right: 25px;
+        bottom: 50px;
+        width: 78px;
+        height: 78px;
+    }
+}

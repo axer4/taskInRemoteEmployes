@@ -65,3 +65,21 @@ text-align: center;
     top: 362.70px;
     right: 410.20px;
 }
+
+/* ------------------------------------ Media rules 1440 - 1920 -------------------------------------------------*/
+@media screen and (min-width:1440px) and (max-width:1919.5px) {
+    .contactForm_phone {
+        left: 100px;
+        top: 220px;
+    }
+    .contactForm_purpleWave {
+        top: 249px;
+    right: 193px;
+    }
+    .contactForm_whiteSphere {
+        top: 322.7px;
+        right: 208.2px;
+        width: 60px;
+        height: 62px;
+    }
+}

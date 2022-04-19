@@ -65,3 +65,36 @@ margin-bottom: 45px;
 .moreInfo_button {
     padding: 22px 56px;
 }
+
+/* ------------------------------------ Media rules 1440 - 1920 -------------------------------------------------*/
+@media screen and (min-width:1440px) and (max-width:1919.5px) {
+    .moreInfo_text {
+        margin-left: 140px;
+    }
+    .taper {
+        right: 4.5px;
+    }
+    .clocks {
+        right: 485.62px;
+    }
+    .purpleWave {
+        right: 522.33px;
+    }
+    .order {
+        right: 179.69px;
+    }
+    .pinkCylinder {
+        right: 116px;
+    }
+    .lightBlueSphere_small {
+        right: 142.80px;
+    }
+    .pinkSphere {
+        right: 172px;
+    }
+    .lightBlueSphere_big {
+        left: 60px;
+        top: 100px;
+    }
+
+}

@@ -2,82 +2,93 @@
     position: relative;
     min-height: 766px;
 }
-.leftLightBlueSphere{
+
+.leftLightBlueSphere {
     position: absolute;
-left: 234px;
-top: 171px;
-width: 52.57px ;
-height: 52.57px;
+    left: 239px;
+    top: 120px;
+    width: 52.57px;
+    height: 52.57px;
 }
-.leftEllipse{
+
+.leftEllipse {
     position: absolute;
-width: 149px;
-height: 183px;
-left: -2px;
-top: 637px;
-box-sizing: border-box;
+    width: 149px;
+    height: 183px;
+    left: 2px;
+    bottom: 41px;
+    box-sizing: border-box;
 }
+
 .leftWave {
     position: absolute;
-    left: 65px;
-    top: 703px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-width: 171px;
-height: 63px;
+    left: 63px;
+    bottom: 95px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 171px;
+    height: 63px;
 }
-.cylinder{
+
+.cylinder {
     position: absolute;
-    left: 1231px;
-    top: 187px;
+    right: 574.97px;
+    top: 92px;
 }
+
 .goToMarket {
     position: absolute;
-    left: 994px;
-    top: 200px;
+    right: 305.18px;
+    top: 111px;
     z-index: 1;
 }
-.rightBlueWave{
+
+.rightBlueWave {
     position: absolute;
-    left: 973px;
-    top: 523px;
+    right: 757px;
+    top: 428px;
 }
+
 .rightWave {
     position: absolute;
-    left: 1471px;
-    top: 370px;
+    right: 227px;
+    top: 275px;
     z-index: 2;
 }
+
 .rightLightBlueSphere {
     position: absolute;
-    left: 1612px;
-    top: 508px;
+    right: 249px;
+    top: 413px;
 }
 
 .purpleSphere {
     position: absolute;
-    left: 1712px;
-    top: 459px;
+   right: 171px;
+    top: 364px;
 }
+
 .pinkCylinder {
     position: absolute;
-    left: 1486px;
-    top: 672px;
+    right: 273px;
+    bottom: 106px;
 }
+
 .rightEllipse {
     position: absolute;
-    left: 1310.5px;
-    top: 177px;
+    right: 0px;
+    top: 82px;
     z-index: -10;
 }
 
 .hero_heading {
-font-style: normal;
-font-weight: 900;
-font-size: 50px;
-line-height: 125%;
-color: #484848;
-margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: #484848;
+    margin-bottom: 20px;
 }
+
 .hero_content {
     position: absolute;
     left: 375px;
@@ -87,9 +98,58 @@ margin-bottom: 20px;
     align-items: baseline;
     max-width: 838px;
 }
+
 .hero_description {
     margin-bottom: 58px;
 }
+
 .hero_button {
     padding: 23px 92px;
+}
+
+/* ------------------------------------ Media rules 1440 - 1920 -------------------------------------------------*/
+@media screen and (min-width:1440px) and (max-width:1919.5px) {
+    .leftLightBlueSphere {
+        width: 42.57px;
+        height: 42.57px;
+    }
+
+    .goToMarket {
+        width: 450px;
+        height: 470px;
+        right: 105.18px;
+    }
+    .cylinder {
+        right: 295.97px;
+    }
+    .rightBlueWave {
+        top: 350px;
+        right: 400px;
+    }
+    .rightWave {
+        right: 0px;
+        top: 200px;
+    }
+    .rightLightBlueSphere {
+        right: 49px;
+        top: 343px;
+        width: 43px;
+        height: 43px;
+    }
+    .purpleSphere {
+        right: 0px;
+        top: 310px;
+        width: 27px;
+        height: 27px;
+    }
+    .pinkCylinder {
+        right: 73px;
+        bottom: 206px;
+        width: 151px;
+        height: 83px;
+    }
+    .rightEllipse {
+        width: 500px;
+        height: 458px;
+    }
 }
