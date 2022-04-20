@@ -86,7 +86,7 @@ const ShopExamples = () => {
                 alt='white sphere'
                 className={s.whiteSphere}
             />
-            <Media query="(min-width: 768px) and (max-width:1023.5px)" render={() =>
+            <Media query="(min-width: 320px) and (max-width:1023.5px)" render={() =>
             (<section className={s.examples}>
                 <h2 className={s.examples_heading}>Примеры <span className={s.examples_nextString}>онлайн-магазинов</span></h2>
                 <div className={s.slider_examples}>
