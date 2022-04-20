@@ -6,24 +6,28 @@
     color: #111111;
     min-height: 105px;
 }
-.ourService_arrowButton{
+
+.ourService_arrowButton {
     background-color: #ffffff;
     margin-right: 16px;
     margin-left: auto;
     width: 60px;
     height: 60px;
 }
+
 .ourService_arrowButton:hover {
     border: 1px solid #67AEFC;
     border-radius: 15px;
 }
+
 .ourService_arrowButton:active {
-    border:none;
+    border: none;
     border-radius: 15px;
     background-color: #67AEFC;
-    color:#ffffff;
+    color: #ffffff;
 }
-.ourService{
+
+.ourService {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,10 +36,12 @@
     min-height: 703px;
     position: relative;
 }
+
 .ourService_description {
     display: inline-block;
     margin-left: 28px;
 }
+
 .ourService_item {
     display: flex;
     align-items: center;
@@ -45,14 +51,17 @@
     border-radius: 15px;
     padding-left: 44px;
     font-size: 18px;
-line-height: 175%;
+    line-height: 175%;
 }
+
 .ourService_item:not(:last-child) {
     margin-bottom: 10px;
 }
+
 .ourService_item::before {
     content: url('../../images/beforeEllipse.png');
 }
+
 .bag {
     position: absolute;
     top: 463px;
@@ -63,23 +72,58 @@ line-height: 175%;
 @media screen and (min-width:1440px) and (max-width:1919.5px) {
     .bag {
         right: 0;
-    top: 553px;
-    width: 123px;
-    height: 138px;
+        top: 553px;
+        width: 123px;
+        height: 138px;
     }
 }
+
 /* ------------------------------------ Media rules 1024 - 1440 -------------------------------------------------*/
 @media screen and (min-width:300px) and (max-width:1439.5px) {
-    .ourService_item{
+    .ourService_item {
         min-width: 969px;
     }
+
     .bag {
         display: none;
     }
 }
+
 /* ------------------------------------ Media rules 768 - 1024 -------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023.5px) {
-    .ourService_item{
+    .ourService_item {
         min-width: 669px;
+    }
+}
+
+/* ------------------------------------ Media rules 320 - 768 -------------------------------------------------*/
+@media screen and (min-width:320px) and (max-width:767.5px) {
+    .ourService {
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 0;
+    }
+
+    .ourService_heading {
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    .ourService_item {
+        max-width: 335px;
+        min-width: 0px;
+        padding-left: 24px;
+        font-size: 17px;
+        line-height: 175%;
+    }
+
+    .ourService_item::before {
+        content: url('../../images/mobile/listStyle.png');
     }
 }

@@ -20,22 +20,26 @@
     line-height: 125%;
     margin-bottom: 82px;
 }
+
 .blueWave {
     position: absolute;
     bottom: 47px;
     right: 186px;
 }
+
 /* ------------------------------------ Media rules 1024 - 1440 -------------------------------------------------*/
 @media screen and (min-width:1024px) and (max-width:1439.5px) {
     .whiteSphere {
         left: 50px;
         top: 50px;
     }
-    .container .slick-slider .slick-initialized{
+
+    .container .slick-slider .slick-initialized {
         width: 0px;
 
     }
 }
+
 /* ------------------------------------ Media rules 768 - 1024 -------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023.5px) {
     .whiteSphere {
@@ -44,13 +48,45 @@
         width: 52px;
         height: 52px;
     }
+
     .developmentSteps {
         min-height: 600px;
     }
+
     .blueWave {
         bottom: 10px;
         right: 50px;
         width: 150px;
         height: 50px;
+    }
+}
+
+/* ------------------------------------ Media rules 320 - 768 -------------------------------------------------*/
+@media screen and (min-width:320px) and (max-width:767.5px) {
+    .developmentSteps {
+        padding-top: 42px;
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .developmentSteps_heading {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 150%;
+        text-align: center;
+        max-width: 320px;
+    }
+
+    .whiteSphere {
+        width: 38.86px;
+        height: 38.86px;
+        top: 18px;
+        left: -20px;
+    }
+
+    .blueWave {
+        display: none;
     }
 }

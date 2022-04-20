@@ -1,6 +1,8 @@
 import s from './Hero.module.css';
 import images from '../../images/hero/index';
 import Button from '../../UI/Button.js'
+import Media from 'react-media';
+import ellipse from '../../images/mobile/ellipse.png';
 const {
     cylinder,
     goToMarket,
@@ -69,6 +71,20 @@ const Hero = () => {
                 alt='ellipse'
                 className={s.rightEllipse}
             />
+            <Media query="(max-width: 767.5px)" render={() => (
+                <>
+                    <img
+                        src={rightWave}
+                        alt='wave'
+                        className={s.rightWave_big}
+                    />
+                    <img
+                        src={ellipse}
+                        alt='ellpise'
+                        className={s.ellipse}
+                    />
+                </>
+            )} />
             <div className={s.hero_content}>
                 <h1 className={s.hero_heading}>
                     Разработка<br />
@@ -81,8 +97,8 @@ const Hero = () => {
                     с командой Virtual Designers
                 </p>
                 <Button buttonText={'ЗАКАЗАТЬ'}
-                        className={s.hero_button}
-                 />
+                    className={s.hero_button}
+                />
             </div>
         </div>
     )

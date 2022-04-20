@@ -63,7 +63,7 @@
 
 .purpleSphere {
     position: absolute;
-   right: 171px;
+    right: 171px;
     top: 364px;
 }
 
@@ -119,84 +119,225 @@
         height: 470px;
         right: 105.18px;
     }
+
     .cylinder {
         right: 295.97px;
     }
+
     .rightBlueWave {
         top: 350px;
         right: 400px;
     }
+
     .rightWave {
         right: 0px;
         top: 200px;
     }
+
     .rightLightBlueSphere {
         right: 49px;
         top: 343px;
         width: 43px;
         height: 43px;
     }
+
     .purpleSphere {
         right: 0px;
         top: 310px;
         width: 27px;
         height: 27px;
     }
+
     .pinkCylinder {
         right: 73px;
         bottom: 206px;
         width: 151px;
         height: 83px;
     }
+
     .rightEllipse {
         width: 500px;
         height: 458px;
     }
 }
+
 /* ------------------------------------ Media rules 1024 - 1440 -------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1439.5px) {
     .hero {
         min-height: 1166px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
     }
+
     .hero_content {
         position: static;
         margin-bottom: 40px;
     }
+
     .pinkCylinder {
         right: 100px;
     }
 }
+
 /* ------------------------------------ Media rules 768 - 1024 -------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023.5px) {
     .leftEllipse {
         display: none;
     }
+
     .leftWave {
         display: none;
     }
+
     .goToMarket {
         right: 135px;
     }
+
     .cylinder {
         right: 404px;
     }
+
     .leftLightBlueSphere {
         left: 69px;
     }
+
     .rightBlueWave {
         right: 587px;
     }
-    .rightWave{
+
+    .rightWave {
         right: 57px;
     }
+
     .rightLightBlueSphere {
         right: 79px;
     }
+
     .purpleSphere {
         right: 1px;
+    }
+}
+
+/* ------------------------------------ Media rules 320 - 768 -------------------------------------------------*/
+@media screen and (min-width:320px) and (max-width:767.5px) {
+    .hero {
+        min-height: 732px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .hero_content {
+        position: static;
+        max-width: 336px;
+        align-items: stretch;
+    }
+
+    .hero_heading {
+        font-weight: 800;
+        font-size: 27px;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+
+    .hero_description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 34px;
+    }
+
+    .hero_button {
+        margin-bottom: 51px;
+    }
+
+    .leftEllipse {
+        display: none;
+    }
+
+    .leftWave {
+        display: none;
+    }
+
+    .cylinder {
+        width: 47px;
+        height: 22px;
+        top: 35px;
+        right: 184px;
+    }
+
+    .goToMarket {
+        width: 209px;
+        height: 204px;
+        right: 100px;
+        top: 80px;
+        transform: rotate(15deg);
+    }
+
+    .rightWave {
+        width: 67px;
+        height: 26px;
+        left: 2px;
+        top: 237px;
+    }
+
+    .rightBlueWave {
+        width: 78px;
+        height: 28px;
+        top: 152px;
+        right: 245px;
+    }
+
+    .rightWave_big {
+        width: 91px;
+        height: 33px;
+        position: absolute;
+        right: 71px;
+        top: 120px;
+        z-index: 2;
+    }
+
+    .rightLightBlueSphere {
+        width: 24px;
+        height: 23px;
+        right: 80px;
+        top: 156px;
+    }
+
+    .rightEllipse {
+        width: 194px;
+        height: 243px;
+        top: 35px;
+        right: 0px;
+    }
+
+    .leftLightBlueSphere {
+        display: none;
+    }
+
+    .pinkCylinder {
+        width: 66px;
+        height: 35px;
+        right: 90px;
+        bottom: 484px;
+        z-index: 1;
+    }
+
+    .purpleSphere {
+        width: 26px;
+        height: 26px;
+        right: 24px;
+        top: 263px;
+        z-index: -20;
+    }
+
+    .ellipse {
+        position: absolute;
+        left: 2px;
+        top: 28px;
     }
 }

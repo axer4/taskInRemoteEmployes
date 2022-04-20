@@ -1,6 +1,6 @@
 import s from './DropDownBlock.module.css';
-import images from '../images';
-const {arrowDown} = images;
+import arrowDown from '../images/arrowDown.svg';
+
 const DropDownBlock = ({content,closeBlock,boolean,method}) => {
     const {title,description} = content
     return (
